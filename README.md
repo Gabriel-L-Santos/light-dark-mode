@@ -2,7 +2,7 @@
 
 ## Deploy do projeto
 
-<https://login-register-website-gabriel-l-santos.vercel.app/>
+<https://light-dark-mode-gabriel-l-santos.vercel.app/>
 
 <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
 </p>
