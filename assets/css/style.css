@@ -14,6 +14,7 @@
     min-height: 100vh;
     background-color: #dbefff;
     overflow: hidden;
+    transition: background 0.5s;
 }
 
 .container {
@@ -26,6 +27,7 @@
     background-color: aliceblue;
     padding: 1.25rem 1rem;
     position: relative;
+    transition: background 0.5s;
 }
 
 .img img {
@@ -44,13 +46,13 @@
 }
 
 .text h1 {
-    color: #0088d2;
+    color: #7e00d2;
 }
 
 .text p {
-    font-size: 16px;
+    font-size: 17px;
     margin: 2% 0;
-    color: #808080;
+    color: #383838;
 }
 
 .btn {
@@ -59,7 +61,7 @@
     justify-content: center;
     width: 60%;
     padding: 1rem;
-    background: #0088d2;
+    background: #7e00d2;
     border: 0;
     outline: none;
     cursor: pointer;
@@ -67,13 +69,30 @@
     color: #dbefff;
     font-size: 20px;
     margin-top: 3%;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: #7e00d2bb;
+    color: #fff;
+}
+
+.link:link {
+    color: #dbefff;
+    text-decoration: none;
+}
+
+.link:visited {
+    color: #dbefff;
+    text-decoration: none;
 }
 
 .icon {
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    background-color: #dbefff;
+    background-color: #efdbff;
     position: absolute;
     top: 2%;
     right: 2%;
@@ -86,6 +105,24 @@
 .icon::before {
     content: "\f186";
     font-family: fontAwesome;
-    color: #0088d2;
+    color: #7e00d2;
     font-size: 20px;
+}
+
+/* Dark Mode */
+
+.header.dark {
+    background: #202026;
+}
+
+.header.dark .icon::before {
+    content: "\f185";
+}
+
+.header.dark .container {
+    background: #323840;
+}
+
+.header.dark .text p {
+    color: #fff;
 }
